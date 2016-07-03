@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "Node wrapper of qshell",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bruceCzK/qshell"
+  },
+  "bugs": {
+    "url": "https://github.com/bruceCzK/qshell/issues",
+    "email": "bruceczk@foxmail.com"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
