@@ -8,9 +8,14 @@ const execFile = require('child_process').execFile;
 
 const bin = './bin/qshell_' + platform + '_' + (arch === 'x64' ? 'amd64' : '386');
 
-module.exports = function (cb) {
-  if (typeof cb !== 'function') {
-    throw new Error('Callback is not a function');
+execFile(bin, userArgs, function (err, stdout, stderr) {
+  if (err) {
+    throw err;
   }
-  return execFile(bin, userArgs, cb);
-};
+  if (stdout) {
+    console.log(stdout);
+  }
+  if (stderr) {
+    console.error(stderr);
+  }
+});
