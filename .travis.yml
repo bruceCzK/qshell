@@ -1,6 +1,9 @@
+language: node_js
 deploy:
   provider: npm
-  email: "bruceczk@foxmail.com"
-  api_key: "79b51019-2aab-4a57-b733-cd2521db28e9"
+  email: bruceczk@foxmail.com
+  api_key:
+    secure: CtGzUPvWAOdwbWds3t2R1ltd+01ljD2qYEOFVnTgG4XDNRVtl/75eo7o5q8qqwmayoN7/hxQWwx9MvqijjfBVqzsEauV1sHxZdJTLZ9m5eh8bufrsX6qxOsuNmykONmc0SPQfTOFXEvrlfA9w3eh2bqUjQWMW5D9nOSC/Kba7Lxpm2p6Rucx4K1hdEPMSaoREWzFIJoPtCOEFLbCLroMxdYxLy+/eQubRLdJHd9pi31ifBpXD0heiqAEnM1LzgdOFA3b064J9nS1UuCewhUJPVyVawXcSi3pd03TMPMU5/Q/Gw8A4BrSpAy9sxrkxfqpBk4y0Ee86KtsRfft0wJbexFRKijyqdfn+n0bNYM/QLj2jNZpxhFr/w30KhrTn+thHFcvBZwTuMG5BnrdpgoqeuIQ4fjpKGr3LnP6x2zJP1n7uggSV+z/K6Yg2euoExwcob2cN+UNGvTmxcUTzK3+cvuobb9Y/mvjj1GJceJ+qvJO9xOfnkK1cyODqcml4XVORgyEZ7sG3njXD664psWB4BZzMuB9N49PMFBDQ6oXnUHIFC5OvE1fXx8ccsNQ5kG7yPCsklcc7geCOMOO1pz1iiboZbNM2xvB/DNDQdTtofcg7JfAt5G4uxREm5g21oSHGiiqVDhFw3YXG6fwTDsGNz2Wp31V6Zza4Q7LO1zvFdI=
   on:
     tags: true
+    repo: bruceCzK/qshell
