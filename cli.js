@@ -6,7 +6,7 @@ const arch = os.arch();
 const userArgs = process.argv.slice(2);
 const execFile = require('child_process').execFile;
 
-const bin = './bin/qshell_' + platform + '_' + (arch === 'x64' ? 'amd64' : '386');
+const bin = __dirname + '/bin/qshell_' + platform + '_' + (arch === 'x64' ? 'amd64' : '386');
 
 execFile(bin, userArgs, function (err, stdout, stderr) {
   if (err) {
