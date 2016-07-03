@@ -1,0 +1,6 @@
+deploy:
+  provider: npm
+  email: "bruceczk@foxmail.com"
+  api_key: "79b51019-2aab-4a57-b733-cd2521db28e9"
+  on:
+    tags: true
