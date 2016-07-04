@@ -1,6 +1,6 @@
 {
   "name": "qshell",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Node wrapper of qshell",
   "main": "index.js",
   "repository": {
