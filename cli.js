@@ -13,6 +13,5 @@ if (userArgs[0] === '-v') {
   console.log('v' + version);
 }
 spawn(bin, userArgs, {
-  cwd: os.homedir(),
   stdio: 'inherit'
 });
