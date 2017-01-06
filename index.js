@@ -14,17 +14,13 @@ module.exports = {
   login: login
 };
 
-function login(appId, secrect) {
-  return execSync(bin, [appId, secrect], {
-    cwd: os.homedir()
-  });
+function login(appId, secret) {
+  return execSync(bin, [appId, secret]);
 }
 
 function exec(command, args, cb) {
   if (typeof cb !== 'function') {
     throw new Error('Callback is not a function');
   }
-  spawn(bin, [command, ...args], {
-    cwd: os.homedir()
-  }).on('exit', cb);
+  spawn(bin, [command, ...args]).on('exit', cb);
 }
