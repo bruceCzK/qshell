@@ -11,7 +11,7 @@ const platform = {
   darwin: 'darwin'
 }[os.platform()] || 'linux'
 
-const bin = path.join(__dirname, 'bin', 'qshell_' + platform + '_' + arch)
+const bin = path.join(__dirname, 'bin', 'qshell-' + platform + '-' + arch)
 
 if (userArgs[0] === '-v') {
   console.log('v' + version)
