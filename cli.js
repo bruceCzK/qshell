@@ -1,11 +1,11 @@
 #! /usr/bin/env node
-
 const os = require('os')
 const path = require('path')
 const arch = os.arch()
 const userArgs = process.argv.slice(2)
-const spawn = require('child_process').spawn
+const spawnSync = require('child_process').spawnSync
 const version = require('./package.json').version
+
 const platform = {
   win32: 'windows',
   darwin: 'darwin'
@@ -13,9 +13,11 @@ const platform = {
 
 const bin = path.join(__dirname, 'bin', 'qshell-' + platform + '-' + arch)
 
-if (userArgs[0] === '-v') {
+if (userArgs[0] === '-v' || userArgs[0] === '--version') {
   console.log('v' + version)
 }
-spawn(bin, userArgs, {
-  stdio: 'inherit'
+
+spawnSync(bin, userArgs, {
+  stdio: 'inherit',
+  windowsHide: true
 })
